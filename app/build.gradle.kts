@@ -2,6 +2,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("org.sonarqube") version "6.0.1.5171"
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "SE-II-group-new_testing-5")
+        property("sonar.organization", "se-ii-group-new")
+        property("sonar.host.url", "https://sonarcloud.io")
+    }
 }
 
 android {
